@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "Windows Machine": {
+      "commandName": "MsixPackage",
+      "nativeDebugging": false
+    }
+  },
+
+  "AllowedHosts": "*",
+  "ApiSettings": {
+    "baseUrl": "http://localhost:5291/"
+  }
+}
