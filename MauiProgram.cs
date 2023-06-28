@@ -18,6 +18,9 @@ public static class MauiProgram
 		builder.Services.AddSingleton<IContactoRepository, ContactoService>(); 
 
 		builder.Services.AddSingleton<MainPage>();
+
+        builder.Services.AddSingleton<IMediaPicker>(MediaPicker.Default);
+		builder.Services.AddTransient<CameraPage>();
 		//builder.Services.AddSingleton<NuevoContactoPage>();
 		//builder.Services.AddSingleton<DetailsPage>();
 

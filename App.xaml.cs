@@ -9,7 +9,7 @@ public partial class App : Application
 		InitializeComponent();
 
         //MainPage = new NavigationPage(new ContactosPage());
-        MainPage = new NavigationPage(new LoginPage());
-
+        //MainPage = new NavigationPage(new LoginPage());
+        MainPage = new NavigationPage(new CameraPage());
     }
 }
