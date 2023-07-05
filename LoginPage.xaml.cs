@@ -25,4 +25,9 @@ public partial class LoginPage : ContentPage
             }
         }
     }
+
+    public async void OnClickSingUp(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new SingUpPage());
+    }
 }

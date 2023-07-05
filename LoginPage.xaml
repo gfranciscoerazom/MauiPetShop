@@ -24,5 +24,10 @@
             Clicked="OnClickLogin"
             Margin="8"
         />
+        <Button
+            Text="Sing up"
+            Clicked="OnClickSingUp"
+            Margin="8"
+        />
     </VerticalStackLayout>
 </ContentPage>
