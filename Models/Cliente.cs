@@ -32,6 +32,18 @@ namespace MauiPetShop.Models
             get;
             set;
         }
+
+        public bool IsAdmin
+        {
+            get;
+            set;
+        }
+
+        public string Foto
+        {
+            get;
+            set;
+        }
     }
 }
 
