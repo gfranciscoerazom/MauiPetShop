@@ -8,14 +8,24 @@ public partial class ContactosPage : ContentPage
 {
 	private readonly IContactoRepository dataService;
 
-	public ContactosPage()
+    public Cliente Cliente { get; }
+
+    public ContactosPage()
 	{
 		InitializeComponent();
 
 		dataService = new ContactoService();
 	}
 
-	public async void onItemSelectedDetails(object sender, SelectedItemChangedEventArgs e)
+    public ContactosPage(Cliente cliente)
+    {
+        InitializeComponent();
+
+        dataService = new ContactoService();
+        Cliente = cliente;
+    }
+
+    public async void onItemSelectedDetails(object sender, SelectedItemChangedEventArgs e)
 	{
         Producto producto = (Producto)e.SelectedItem;
 		await Navigation.PushAsync(new DetailsPage()
@@ -34,7 +44,7 @@ public partial class ContactosPage : ContentPage
 
 	public async void onClickNuevoContacto(object sender, EventArgs e)
 	{
-		//await Navigation.PushAsync(new Update());
+		await Navigation.PushAsync(new UpdateCliente(this.Cliente));
 	}
 
 }

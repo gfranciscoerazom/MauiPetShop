@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiPetShop.UpdateCliente"
+             Title="UpdateCliente"
+             BindingContext="{Binding}"
+             xmlns:local="clr-namespace:MauiPetShop.Models;assembly=MauiPetShop"
+             >
+    <VerticalStackLayout>
+        <!-- Página para actualizar un cliente con:
+            Nombre,
+            Email,
+            Numero,
+            Contrasena,
+            Confirmar Contrasena
+        -->
+        <Label 
+            Text="Welcome to Update Page"
+            FontSize="Large"
+            HorizontalOptions="Center"
+            VerticalOptions="CenterAndExpand"/>
+        <Entry
+            Placeholder="Name"
+            x:Name="NameEntry"/>
+        <Entry
+            Placeholder="Email"
+            x:Name="EmailEntry"/>
+        <Entry
+            Placeholder="Phone Number"
+            x:Name="PhoneNumberEntry"/>
+        <Entry
+            Placeholder="Password"
+            x:Name="PasswordEntry"/>
+        <Entry
+            Placeholder="Confirm Password"
+            x:Name="ConfirmPasswordEntry"/>
+        <Button
+            Text="Sing Up"
+            x:Name="SingUpButton"
+            Clicked="SingUpButton_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>

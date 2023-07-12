@@ -21,7 +21,7 @@ public partial class LoginPage : ContentPage
         {
             if (cliente.Nombre.Equals(Nombre.Text) && cliente.Contrasena.Equals(Contrasena.Text))
             {
-                await Navigation.PushAsync(new ContactosPage());
+                await Navigation.PushAsync(new ContactosPage(cliente));
             }
         }
     }
