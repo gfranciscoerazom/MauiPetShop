@@ -37,13 +37,13 @@ namespace MauiPetShop.Models
         {
             get;
             set;
-        }
+        } = false;
 
         public string Foto
         {
             get;
             set;
-        }
+        } = "https://www.pngall.com/wp-content/uploads/5/Profile-Avatar-PNG-Picture.png";
     }
 }
 

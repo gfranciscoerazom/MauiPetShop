@@ -13,8 +13,6 @@ public partial class ContactosPage : ContentPage
 		InitializeComponent();
 
 		dataService = new ContactoService();
-
-		Console.WriteLine("**********************MainPage");
 	}
 
 	public async void onItemSelectedDetails(object sender, SelectedItemChangedEventArgs e)
@@ -36,7 +34,7 @@ public partial class ContactosPage : ContentPage
 
 	public async void onClickNuevoContacto(object sender, EventArgs e)
 	{
-		//await Navigation.PushAsync(new NuevoContactoPage());
+		//await Navigation.PushAsync(new Update());
 	}
 
 }

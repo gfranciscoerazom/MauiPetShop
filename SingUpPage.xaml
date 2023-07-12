@@ -4,9 +4,36 @@
              x:Class="MauiPetShop.SingUpPage"
              Title="SingUpPage">
     <VerticalStackLayout>
+        <!-- Página para registrar un cliente con:
+            Nombre,
+            Email,
+            Numero,
+            Contrasena,
+            Confirmar Contrasena
+        -->
         <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+            Text="Welcome to Sing-Up"
+            FontSize="Large"
+            HorizontalOptions="Center"
+            VerticalOptions="CenterAndExpand"/>
+        <Entry
+            Placeholder="Name"
+            x:Name="NameEntry"/>
+        <Entry
+            Placeholder="Email"
+            x:Name="EmailEntry"/>
+        <Entry
+            Placeholder="Phone Number"
+            x:Name="PhoneNumberEntry"/>
+        <Entry
+            Placeholder="Password"
+            x:Name="PasswordEntry"/>
+        <Entry
+            Placeholder="Confirm Password"
+            x:Name="ConfirmPasswordEntry"/>
+        <Button
+            Text="Sing Up"
+            x:Name="SingUpButton"
+            Clicked="SingUpButton_Clicked"/>
     </VerticalStackLayout>
 </ContentPage>
